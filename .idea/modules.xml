@@ -13,6 +13,9 @@
       <module fileurl="file://$PROJECT_DIR$/Comportamiento/State/State.iml" filepath="$PROJECT_DIR$/Comportamiento/State/State.iml" />
       <module fileurl="file://$PROJECT_DIR$/Comportamiento/Strategy/Strategy.iml" filepath="$PROJECT_DIR$/Comportamiento/Strategy/Strategy.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/designPattern.iml" filepath="$PROJECT_DIR$/.idea/designPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hilos/Hilos_Concurrencia/punto1/punto1.iml" filepath="$PROJECT_DIR$/Hilos/Hilos_Concurrencia/punto1/punto1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hilos/Hilos_Concurrencia/punto2/punto2.iml" filepath="$PROJECT_DIR$/Hilos/Hilos_Concurrencia/punto2/punto2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hilos/Hilos_Concurrencia/punto3/punto3.iml" filepath="$PROJECT_DIR$/Hilos/Hilos_Concurrencia/punto3/punto3.iml" />
     </modules>
   </component>
 </project>

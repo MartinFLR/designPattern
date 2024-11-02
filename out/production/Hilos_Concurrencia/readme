@@ -1,0 +1,4 @@
+Que hace join?
+El método join() en Java es utilizado para hacer
+que un hilo espere hasta que otro hilo haya terminado su ejecución.
+

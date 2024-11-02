@@ -1,0 +1,31 @@
+Que hace el join()?
+Es utilizado para hacer
+que un hilo espere hasta que otro hilo haya terminado su ejecución.
+
+que hace el syncronized en un metodo?
+Basicamente hace que el metodo solo pueda ser llamado por un hilo a la vez
+
+
+¿Dónde se debe colocar el join() en la programación con hilos?
+El método join() se debe utilizar después de iniciar todos los hilos,
+no dentro del bloque foreach ni inmediatamente después de iniciar cada hilo.
+
+A continuación, se explica por qué:
+
+Propósito de los Hilos:
+Al utilizar hilos, buscamos que todos
+se inicien simultáneamente y se ejecuten de forma concurrente.
+Si colocamos join() inmediatamente después de iniciar un hilo, el hilo principal
+se detendrá hasta que ese hilo termine, lo que impide que otros hilos se inicien
+y ejecuten al mismo tiempo.
+
+Ejemplo de Uso Correcto:
+Primero, se deben iniciar todos los hilos en un bucle.
+Esto permite que cada hilo comience su tarea sin esperar a que el hilo anterior complete su ejecución.
+
+
+Uso de join(): Una vez que todos los hilos han sido iniciados,
+podemos recorrer la lista de hilos y llamar a join() en cada uno de ellos.
+Esto garantiza que el hilo principal espere a que todos los hilos productores terminen
+ su ejecución antes de continuar con el siguiente bloque de código.
+

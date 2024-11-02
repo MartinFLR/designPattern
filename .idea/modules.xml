@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Creacionales/Abstract_Factory/Abstract_Factory.iml" filepath="$PROJECT_DIR$/Creacionales/Abstract_Factory/Abstract_Factory.iml" />
       <module fileurl="file://$PROJECT_DIR$/Creacionales/Builder/Builder.iml" filepath="$PROJECT_DIR$/Creacionales/Builder/Builder.iml" />
       <module fileurl="file://$PROJECT_DIR$/Estructurales/Composite/Composite.iml" filepath="$PROJECT_DIR$/Estructurales/Composite/Composite.iml" />
       <module fileurl="file://$PROJECT_DIR$/Estructurales/Decorator/Decorator.iml" filepath="$PROJECT_DIR$/Estructurales/Decorator/Decorator.iml" />
       <module fileurl="file://$PROJECT_DIR$/Estructurales/Facade/Facade.iml" filepath="$PROJECT_DIR$/Estructurales/Facade/Facade.iml" />
       <module fileurl="file://$PROJECT_DIR$/Creacionales/Factory_Method/Factory_Method.iml" filepath="$PROJECT_DIR$/Creacionales/Factory_Method/Factory_Method.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hilos/Hilos_Concurrencia/Hilos_Concurrencia.iml" filepath="$PROJECT_DIR$/Hilos/Hilos_Concurrencia/Hilos_Concurrencia.iml" />
       <module fileurl="file://$PROJECT_DIR$/Comportamiento/Observer/Observer.iml" filepath="$PROJECT_DIR$/Comportamiento/Observer/Observer.iml" />
       <module fileurl="file://$PROJECT_DIR$/Creacionales/Singleton/Singleton.iml" filepath="$PROJECT_DIR$/Creacionales/Singleton/Singleton.iml" />
       <module fileurl="file://$PROJECT_DIR$/Comportamiento/State/State.iml" filepath="$PROJECT_DIR$/Comportamiento/State/State.iml" />

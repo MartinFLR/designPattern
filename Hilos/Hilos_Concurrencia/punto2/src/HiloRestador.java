@@ -1,8 +1,8 @@
-public class Hilo implements Runnable{
+public class HiloRestador implements Runnable{
     private int numHilo = 0;
     private ContadorCompartido contadorCompartido;
 
-    public Hilo (ContadorCompartido contadorCompartido, int numHilo){
+    public HiloRestador (ContadorCompartido contadorCompartido, int numHilo){
         this.contadorCompartido = contadorCompartido;
         this.numHilo = numHilo;
     }
@@ -11,11 +11,13 @@ public class Hilo implements Runnable{
     public void run() {
         try {
             Thread.sleep(1000);
-            //System.out.println("Hola desde el hilo: "+ numHilo);
-            this.contadorCompartido.incrementoUno();
-            this.contadorCompartido.getNumero();
+            //System.out.println("hola desde el hilo restador: "+ numHilo);
+            contadorCompartido.restarUno();
+            contadorCompartido.getNumero();
+
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+
     }
 }

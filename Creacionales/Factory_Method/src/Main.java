@@ -1,15 +1,24 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+//Aplique el patrón Factory Method para la creación de juegos físicos y digitales. Los
+//juegos comparten un id y un importe. También el méto_do abstracto getPrecio, que se
+//encarga de calcular el precio de uno u otro. Para ello los juegos físicos tienen un
+//atributo que es el precio de traslado (a caso de ejemplo elija usted). Y los juegos
+//digitales el precio depende de la plataforma en la cual se compra teniendo como
+//atributo el precio de la plataforma. Estos valores deben ser float y multiplicarlos al
+//importe.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        JuegoDigitalFactory digitalFactory = new JuegoDigitalFactory();
+        JuegoDigital juegoDigital = digitalFactory.crearJuego(1,1000,"Xbox");
+
+
+        JuegoFisicoFactory fisicoFactory = new JuegoFisicoFactory();
+        JuegoFisico juegoFisico =  fisicoFactory.crearJuego(1,2000,1000);
+
+        juegoFisico.getPrecio();
+        juegoDigital.getPrecio();
+
+
+
     }
 }

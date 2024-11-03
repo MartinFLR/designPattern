@@ -22,6 +22,10 @@ public class Main {
         producto = new EstadosUnidos(producto);
         System.out.println(producto.getPrecio());
 
-
+    //Util cuando quiero darle comportamiento a una clase, hay que revisar bien como se implementa
+        // la parte del productoDecorator, las clases hijas a este siempre van a llamar al
+        // metodo de la clase padre donde esta el objeto decorado
+        // lo notamos en la clase "Argentina" y "Estados unidos", que estas sobreescriben
+        // Los metodos del objetoDecorado
     }
 }

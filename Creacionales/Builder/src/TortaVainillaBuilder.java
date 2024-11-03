@@ -38,11 +38,6 @@ public class TortaVainillaBuilder implements  Builder{
         this.tortaVainilla.setRelleno("Vainilla");
     }
 
-    @Override
-    public void imprimirTodo() {
-        this.tortaVainilla.imprimir();
-    }
-
     public void setCantExtractoVainilla(int cantExtractoVainilla) {
         this.tortaVainilla.setCantExtractoVainilla(cantExtractoVainilla);
     }

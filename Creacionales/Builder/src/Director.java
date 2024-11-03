@@ -6,7 +6,7 @@ public class Director {
         builder.ponerRelleno("Vainilla");
 
         builder.setCantExtractoVainilla(5);
-        builder.imprimirTodo();
+
 
 
     }

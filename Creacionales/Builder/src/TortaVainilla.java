@@ -6,6 +6,7 @@ public class TortaVainilla extends Torta {
         System.out.println(this.getCantHuevo());
         System.out.println(this.getCantLeche());
         System.out.println(this.getCantHarina());
+        System.out.println(this.getRelleno());
         System.out.println(this.cantExtractoVainilla);
     }
 

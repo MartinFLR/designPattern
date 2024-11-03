@@ -10,5 +10,12 @@ public class Main {
         director.hacerTortaVainilla(vainillaBuilder);
         TortaVainilla tortaVainilla = vainillaBuilder.build();
 
+        tortaVainilla.imprimir();
+
+        //Este patron es util cuando se quiere achicar el tamaño del constructor, separando en partes
+        //La inicializacion del objeto, se le agrega un director por si ademas se desea
+        //cambiar el orden en el que estos son puestos, aunque es a eleccion del programador.
+        //Una cosa que hay que tener en cuenta en este patron es que el metodo
+        //reset() es indispensable, ya que este prepara el builder para una nueva generacion del objeto
     }
 }

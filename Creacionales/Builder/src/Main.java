@@ -1,15 +1,14 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+//Aplique el patrón Builder para la construcción de tres tipos de tortas, una torta deberá
+//tener como atributo la masa y el relleno. Las tortas deben ser de Vainilla, coco y una a
+//su elección para demostrar el objetivo del patrón solicitado
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        Director director = new Director();
+
+        TortaVainillaBuilder vainillaBuilder = new TortaVainillaBuilder();
+        director.hacerTortaVainilla(vainillaBuilder);
+        TortaVainilla tortaVainilla = vainillaBuilder.build();
+
     }
 }

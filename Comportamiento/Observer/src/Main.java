@@ -13,7 +13,10 @@ public class Main {
 
         sistemaMetereologico.setEstadoClima("aldo");
 
-
-
+        //Ahora al cambiar el estado se le notificara a todos los subcriptores sobre el cambio.
+        //Tener en cuenta que el observable tiene los metodos para subscribirse , desuscribirse y notificar
+        //A los subcriptores nuevos los mete en una lista para despues recorrerla cuando se usa el notifcar()
+        //Los observadores solo tienen un metodo actualizar que es el que se llama cuando recorremos la lista
+        //en el notificar().
     }
 }
